@@ -6,8 +6,9 @@ import { ClientProvider } from "@/components/client";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "cruip",
-  description: "SaSS Landing page",
+  title: "লুৎফুজ্জামান বাবর",
+  description:
+    "লুৎফুজ্জামান বাবর (জন্ম: ১০ অক্টোবর ১৯৫৮) একজন বাংলাদেশি রাজনীতিবিদ। তিনি খালেদা জিয়ার মন্ত্রীসভায় নেত্রকোণা-৪ আসনের সংসদ সদস্য ও স্বরাষ্ট্র প্রতিমন্ত্রী ছিলেন ১০ অক্টোবর ২০০১ থেকে ২৯ অক্টোবর ২০০৬ পর্যন্ত।",
 };
 
 export default function RootLayout({

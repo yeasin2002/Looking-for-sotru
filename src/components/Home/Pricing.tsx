@@ -5,7 +5,7 @@ import curbArrow from "@/assets/icons/arrow.svg";
 import check from "@/assets/icons/greenCheck.svg";
 import Image from "next/image";
 import { PricingCard } from "../cards/PricingCards";
-import { RedHatDisplay } from "@/fonts";
+import { redHatDisplay } from "@/fonts";
 
 interface Props extends React.ComponentProps<"div"> {}
 
@@ -34,7 +34,7 @@ export const Pricing = ({ ...props }: Props) => {
             <p
               className={
                 "m-0 mb-4 mt-8 box-border text-nowrap font-sans text-lg font-bold leading-[27px] tracking-[-0.16px] text-[#F4F4F5] antialiased " +
-                RedHatDisplay.className
+                redHatDisplay.className
               }
             >
               All plans include :

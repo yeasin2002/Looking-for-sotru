@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 import { filterItems, filterMenu, itemList } from "@/data/filtersItems";
-import { interFont, RedHatDisplay } from "@/fonts";
+import { interFont, redHatDisplay } from "@/fonts";
 import videoThumbnail from "@/assets/images/video-thumb.jpg";
 import play from "@/assets/icons/play.svg";
 
@@ -24,7 +24,7 @@ export const ListFilters = ({ ...props }: Props) => {
     <div {...props} className="md:py-14">
       <div className="mx-auto max-w-3xl">
         <h2
-          className={`m-0 text-center text-4xl font-black leading-[52.1792px] tracking-wide md:text-6xl md:leading-[66.08px] md:tracking-[-1.12px] ${RedHatDisplay.className} font-black`}
+          className={`m-0 text-center text-4xl font-black leading-[52.1792px] tracking-wide md:text-6xl md:leading-[66.08px] md:tracking-[-1.12px] ${redHatDisplay.className} font-black`}
         >
           Turn your ideas into reality in seconds
         </h2>

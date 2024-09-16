@@ -1,4 +1,4 @@
-import { RedHatDisplay } from "@/fonts";
+import { redHatDisplay } from "@/fonts";
 import { cn } from "@/utils";
 import React from "react";
 
@@ -13,7 +13,7 @@ export const HomeMain = ({ heading, desc, className, ...props }: Props) => {
       <div className="mx-auto max-w-3xl pt-20">
         <h2
           className={cn(
-            `m-0 text-center text-4xl font-black leading-[52.1792px] tracking-wide md:text-6xl md:leading-[66.08px] md:tracking-[-1.12px] ${RedHatDisplay.className} font-black`,
+            `m-0 text-center text-4xl font-black leading-[52.1792px] tracking-wide md:text-6xl md:leading-[66.08px] md:tracking-[-1.12px] ${redHatDisplay.className} font-black`,
             className,
           )}
         >

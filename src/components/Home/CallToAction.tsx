@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../ui";
 import { cn } from "@/utils";
-import { RedHatDisplay } from "@/fonts";
+import { redHatDisplay } from "@/fonts";
 import { RoundedMesh, HalfRoundMesh } from "../effects";
 interface Props extends React.ComponentProps<"div"> {}
 
@@ -13,7 +13,7 @@ export const CallToAction = ({ ...props }: Props) => {
     >
       <h3
         className={cn(
-          `box-border font-sans text-4xl font-black leading-10 tracking-[-0.16px] text-foreground antialiased ${RedHatDisplay.className}`,
+          `box-border font-sans text-4xl font-black leading-10 tracking-[-0.16px] text-foreground antialiased ${redHatDisplay.className}`,
         )}
       >{`Free until you're ready to launch`}</h3>
 

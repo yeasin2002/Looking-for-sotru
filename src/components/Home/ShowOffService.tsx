@@ -27,7 +27,6 @@ export const ShowOffService = ({ ...props }: Props) => {
 
             <div className="absolute -right-44 top-5 z-10 min-h-2 w-full min-w-10">
               <div className="border-dotted border-red-700"></div>
-              01325888939
             </div>
           </div>
           <div>

@@ -30,16 +30,18 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
   };
 
   return (
-    <div {...props} className="space-y-6">
+    <div {...props} className="space-y-6 pt-4">
       <div className="mx-auto max-w-3xl">
         <h2
           className={`m-0 mb-4 text-center text-4xl font-black leading-[52.1792px] tracking-wide md:text-6xl md:leading-[66.08px] md:tracking-[-1.12px] ${redHatDisplay.className} font-black`}
         >
-          From rough <br className="sm:hidden" /> design files, to powerful products
+          সেভেন সিস্টার্স <br className="sm:hidden" /> অফ ইন্ডিয়া
         </h2>
-        <p className={`text-center text-[20px] leading-[30px] tracking-[-0.16px]`}>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-          excepteur sint occaecat cupidatat
+        <p className={`le ading-[30px] text-center text-[20px] tracking-[-0.16px] text-gray-400`}>
+          লুৎফুজ্জামান বাবরের ভারতীয় সেভেন সিস্টার্স অঞ্চলের (উত্তর-পূর্ব ভারত) সাথে কিছু সম্পর্ক ছিলো, বিশেষ করে অস্ত্র
+          চোরাচালানের ক্ষেত্রে। ২০০৪ সালের ১০ ট্রাক অস্ত্র চালান মামলায় বাবরের সংশ্লিষ্টতা দেখা যায়, যেখানে এসব
+          অস্ত্রগুলো উত্তর-পূর্ব ভারতের বিদ্রোহী গোষ্ঠীগুলোর কাছে পাঠানোর পরিকল্পনা ছিল বলে ধারণা করা হয়। এই ঘটনার সাথে
+          ভারতের সেভেন সিস্টার্স অঞ্চলের বিভিন্ন বিচ্ছিন্নতাবাদী গোষ্ঠীর সংশ্লিষ্টতা উল্লেখযোগ্য।
         </p>
       </div>
 

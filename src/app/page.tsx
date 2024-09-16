@@ -14,10 +14,12 @@ import {
 
 import { ServiceSlider2 } from "@/components/Home/ServiceSlider2";
 import { ListFilters } from "@/components/Home/ListFilters";
+import { ImageGallery } from "@/components/ui-layout/ImageGallery";
+import { Noice } from "@/components/shared";
 
 const RootPage = () => {
   return (
-    <>
+    <div className="container">
       <div className="sm:container">
         <Nav />
         <Hero />
@@ -26,12 +28,13 @@ const RootPage = () => {
       <ServiceSlider2 />
       <ListFilters />
       <ShowOffService />
-      <Pricing />
+      <ImageGallery />
+      {/* <Pricing /> */}
       <Testimonial />
       <Features />
       <CallToAction />
       <Footer />
-    </>
+    </div>
   );
 };
 

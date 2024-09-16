@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClientProvider } from "@/components/client";
+import { Noice } from "@/components/shared";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`container transition-all ${inter.className}`}>
-        <ClientProvider>{children}</ClientProvider>
+      <body className={`transition-all ${inter.className}`}>
+        <ClientProvider>
+          <Noice>{children}</Noice>
+        </ClientProvider>
       </body>
     </html>
   );

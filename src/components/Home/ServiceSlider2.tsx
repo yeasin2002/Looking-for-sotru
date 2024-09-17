@@ -47,10 +47,10 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
 
       <Swiper
         slidesPerView={1}
-        loop
-        centeredSlides={true}
+        centeredSlides={false}
         spaceBetween={0}
         grabCursor={true}
+        loop={false}
         pagination={{ clickable: true }}
         modules={[Navigation]}
         className="mySwiper"
@@ -60,7 +60,7 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
         {serviceSliderData?.map((item) => {
           return (
             <SwiperSlide key={item.title}>
-              <TravelCard />
+              <TravelCard className="mx-6" data={item} />
             </SwiperSlide>
           );
         })}

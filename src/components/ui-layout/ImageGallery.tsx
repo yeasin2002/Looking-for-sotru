@@ -10,6 +10,8 @@ import el5 from "@/assets/images/babor/images (2).jpeg";
 import el6 from "@/assets/images/babor/images.jpeg";
 import el7 from "@/assets/images/babor/prothomalo_import_media_2015_11_21_d6d3c7559fbd0769053cbaa5f0e9eb4d-babor.webp";
 import el8 from "@/assets/images/babor/লুৎফুজ্জামান_বাবর_(৬_আগস্ট_২০০৫).jpeg";
+import { cn } from "@/utils";
+import { LampWrapper } from "../aceternity/LampSectionHeader";
 
 const items = [
   {
@@ -63,10 +65,11 @@ const items = [
   },
 ];
 
-export function ImageGalleryItem() {
+interface Props extends React.ComponentPropsWithoutRef<"div"> {}
+export function ImageGalleryItem({ className }: Props) {
   return (
     <>
-      <div className="group mx-auto mb-10 mt-3 flex w-[90%] justify-center gap-2 max-md:flex-col">
+      <div className={cn("group mx-auto mb-10 mt-3 flex w-full justify-center gap-2 max-md:flex-col", className)}>
         {items.map((item, i: number) => {
           return (
             <article
@@ -101,14 +104,6 @@ interface Props extends React.ComponentProps<"div"> {}
 export const ImageGallery = ({ ...props }: Props) => {
   return (
     <div {...props}>
-      <div className="mx-auto max-w-3xl">
-        <h2
-          className={`m-0 mb-4 text-center text-4xl font-black leading-[52.1792px] tracking-wide md:text-6xl md:leading-[66.08px] md:tracking-[-1.12px] ${redHatDisplay.className} font-black`}
-        >
-          বাবরের গ্যালারি ।
-        </h2>
-      </div>
-
       <ImageGalleryItem />
     </div>
   );

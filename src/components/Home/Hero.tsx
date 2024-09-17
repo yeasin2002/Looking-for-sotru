@@ -5,7 +5,7 @@ import { Button } from "../ui";
 import { Check } from "lucide-react";
 import { notoSerifBengaliFont, interFont } from "@/fonts";
 
-import baborImage from "@/assets/images/babor.jpeg";
+import baborImage from "@/assets/images/babor/babor.jpeg";
 import leftBallMesh from "@/assets/mesh-gradient/ball-right.svg";
 
 interface Props extends React.ComponentProps<"div"> {}

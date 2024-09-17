@@ -7,6 +7,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 import { interFont } from "@/fonts";
 import { AlignJustify } from "lucide-react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { HireMeCTA } from "./HireMeCTA";
 
 interface Props extends React.ComponentProps<"div"> {}
 
@@ -30,7 +31,8 @@ export const Nav = ({ className, ...props }: Props) => {
       </div>
       <div className="flex items-center gap-x-4">
         <ThemeSwitcher />
-        <Button className="hidden md:block">Request Code</Button>
+        {/* <Button className="hidden md:block">Request Code</Button> */}
+        <HireMeCTA className="hidden md:block" />
 
         <Sheet>
           <SheetTrigger className="md:hidden">

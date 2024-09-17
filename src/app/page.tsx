@@ -20,16 +20,14 @@ import { Noice } from "@/components/shared";
 const RootPage = () => {
   return (
     <div className="container">
-      <div className="sm:container">
-        <Nav />
-        <Hero />
-        <Statistics />
-      </div>
+      <Nav />
+      <Hero />
+      <Statistics />
+      <ImageGallery className="w-full" />
+
       <ServiceSlider2 />
-      <ListFilters />
-      <ShowOffService />
-      <ImageGallery />
-      {/* <Pricing /> */}
+      {/* <ListFilters /> */}
+      {/* <ShowOffService /> */}
       <Testimonial />
       <Features />
       <CallToAction />

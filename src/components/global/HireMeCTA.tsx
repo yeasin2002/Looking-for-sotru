@@ -18,6 +18,8 @@ import github from "@/assets/icons/contact/Github-Dark.svg";
 import linkedin from "@/assets/icons/contact/LinkedIn.svg";
 import tel from "@/assets/icons/contact/Telegram.svg";
 
+import handShake from "@/assets/icons/handshake.svg";
+
 const contactList = [
   {
     icon: fb,
@@ -44,10 +46,10 @@ export function HireMeCTA({ className }: Props) {
   return (
     <div className={cn("flex items-center justify-center", className)}>
       <Modal>
-        <ModalTrigger className="group/modal-btn flex justify-center bg-[#39bab5] text-[#FFFFFF] hover:bg-[#39bab5]/90">
+        <ModalTrigger className="group/modal-btn flex justify-center whitespace-nowrap bg-[#39bab5] text-[#FFFFFF] hover:bg-[#39bab5]/90">
           <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-40">Hire Me</span>
           <div className="absolute inset-0 z-20 flex -translate-x-40 items-center justify-center text-white transition duration-500 group-hover/modal-btn:translate-x-0">
-            ✈️
+            <Image src={handShake} alt="handShake" className="size-8" />
           </div>
         </ModalTrigger>
 
@@ -98,7 +100,7 @@ export function HireMeCTA({ className }: Props) {
 
               <div className="flex max-w-sm flex-wrap items-start justify-start gap-x-4 gap-y-6">
                 {contactList.map((item) => (
-                  <a key={item.url} href={item.url}>
+                  <a key={item.url} href={item.url} target="_blank">
                     <Image src={item.icon} alt="icon" className="size-12" />
                   </a>
                 ))}

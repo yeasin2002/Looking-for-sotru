@@ -10,11 +10,11 @@ export const CallToAction = ({ ...props }: Props) => {
   return (
     <div
       {...props}
-      className="relative my-10 flex flex-col items-center justify-between gap-y-5 overflow-hidden rounded-md bg-[#2E2E33] px-6 py-11 lg:flex-row"
+      className="relative my-10 flex items-center justify-between gap-y-5 overflow-hidden rounded-md bg-[#2E2E33] px-6 py-11 lg:flex-row"
     >
       <h3
         className={cn(
-          `box-border font-sans text-4xl font-black leading-10 tracking-[-0.16px] text-foreground antialiased ${redHatDisplay.className}`,
+          `mini:text-2xl box-border font-sans text-xl font-black leading-10 tracking-[-0.16px] text-foreground antialiased sm:text-3xl md:text-4xl ${redHatDisplay.className}`,
         )}
       >
         Need Web Developer?

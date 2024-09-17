@@ -1,18 +1,24 @@
+import { Globe, Twitter, Github, Facebook, Instagram, Linkedin } from "lucide-react";
+
 export const footerData = [
   {
-    title: "PRODUCTS",
-    item: ["Drag and Drop", "Visual Editor", "AI Tools"],
+    title: "Facebook",
+    url: "https://www.facebook.com/yeasin2002.dev",
+    icon: Facebook,
   },
   {
-    title: "RESOURCES",
-    item: ["Industries and tools", "Use cases", "Blog", "Online events", "Nostrud exercitation"],
+    title: "Github",
+    url: "https://github.com/yeasin2002",
+    icon: Github,
   },
   {
-    title: "COMPANY",
-    item: ["Diversity & inclusion", "About us", "Press", "Customer stories", "Online communities"],
+    title: "Linkedin",
+    url: "https://www.linkedin.com/in/yeasin2002/",
+    icon: Linkedin,
   },
   {
-    title: "COMPANY",
-    item: ["Documentation", "Tutorials & guides", "Webinars", "Open-source"],
+    title: "Website",
+    url: "https://yeasin2002.vercel.app/",
+    icon: Globe,
   },
 ];

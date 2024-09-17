@@ -4,12 +4,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 
 import leaf from "@/assets/icons/purpleLeaf.svg";
+import meshBg from "@/assets/mesh-gradient/ball-right.svg";
 import { HomeMain } from "./HomeMain";
+
 interface Props extends React.ComponentProps<"div"> {}
 
 export const Testimonial = ({ ...props }: Props) => {
   return (
-    <div className="border-t border-[#a2a2a8]/30 py-16 sm:container">
+    <div className="relative overflow-x-hidden border-t border-[#a2a2a8]/30 py-16 sm:container">
       <HomeMain heading="লুৎফুজ্জামান বাবর বিতর্কিত বিষয়সমূহ" desc="" />
 
       <div {...props} className="mt-10 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2">
@@ -30,6 +32,11 @@ export const Testimonial = ({ ...props }: Props) => {
           );
         })}
       </div>
+      <Image
+        src={meshBg}
+        alt="Hero Mockup"
+        className="pointer-events-none absolute bottom-0 left-16 size-full opacity-25"
+      />
     </div>
   );
 };

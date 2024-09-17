@@ -4,11 +4,11 @@
 
 ## About
 
-<h3>Lutfuzzaman Babar is a prominent Bangladeshi politician who has been involved in various roles within the country's political landscape. He is a member of the Bangladesh Nationalist Party (BNP) and has served in several significant positions, including as a member of parliament and as a key figure in the party's leadership. His contributions have been influential in shaping the political discourse in Bangladesh</h3>
+Lutfuzzaman Babar is a prominent Bangladeshi politician who has been involved in various roles within the country's political landscape. He is a member of the Bangladesh Nationalist Party (BNP) and has served in several significant positions, including as a member of parliament and as a key figure in the party's leadership. His contributions have been influential in shaping the political discourse in Bangladesh
 
 ## Disclaimer
 
-<h3>
+
 
 This website is created solely for educational and informational purposes regarding Lutfuzzaman Babar. The content provided here is intended to offer knowledge about his background and contributions.
 
@@ -16,4 +16,6 @@ Please be advised that this website is not associated with any political activit
 
 The information presented is based on publicly available sources and is meant for general knowledge. We encourage users to seek further information and consult other reliable sources for comprehensive understanding.
 
- </h3>
+ 
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=80&section=footer&fontSize=20"  /></p>

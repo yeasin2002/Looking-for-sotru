@@ -84,6 +84,9 @@
   .showOff-icon {
     @apply mx-auto flex size-7 items-center justify-center rounded-full bg-mainGreen p-6 text-[#4FD1C5] dark:bg-[#31979540];
   }
+  .fullBold {
+    @apply rounded-md border border-gray-200 bg-gray-100 px-1 py-0.5 dark:border-neutral-700 dark:bg-neutral-800;
+  }
 }
 
 /*  Custom CSS  */

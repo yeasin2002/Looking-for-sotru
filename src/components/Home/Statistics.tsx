@@ -15,7 +15,7 @@ export const Statistics = ({ ...props }: Props) => {
         return (
           <div
             key={item.value}
-            className={`flex size-full flex-col items-center justify-center bg-[#ffffff] py-11 shadow-lg dark:bg-[#2f2e33]`}
+            className={`flex size-full flex-col items-center justify-center rounded-sm bg-[#ffffff] py-11 shadow-lg dark:bg-[#2f2e33]`}
           >
             <p
               className={`m-0 mb-1 text-center text-5xl font-black leading-10 tracking-[-0.8416px] ${redHatDisplay.className} `}

@@ -64,7 +64,11 @@ export const Hero = ({ ...props }: Props) => {
         />
       </div>
 
-      <Image src={leftBallMesh} alt="Hero Mockup" className="absolute -right-20 bottom-4 z-10 opacity-45" />
+      <Image
+        src={leftBallMesh}
+        alt="Hero Mockup"
+        className="pointer-events-none absolute -right-20 bottom-4 z-10 opacity-45"
+      />
     </div>
   );
 };

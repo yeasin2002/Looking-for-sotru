@@ -17,7 +17,7 @@ export const Testimonial = ({ ...props }: Props) => {
           return (
             <div key={user.content} className="flex flex-col items-center justify-center gap-y-2">
               <div className="relative">
-                <Avatar>
+                <Avatar className="opacity-0">
                   <AvatarImage src={"https://github.com/yeasin2002.png"} />
                 </Avatar>
                 <Image src={leaf} alt="leaf" className="absolute -right-2/3 top-0" />

@@ -11,7 +11,7 @@ interface Props extends React.ComponentProps<"div"> {}
 
 export const Testimonial = ({ ...props }: Props) => {
   return (
-    <div className="relative overflow-x-hidden border-t border-[#a2a2a8]/30 py-16 sm:container">
+    <div className="relative overflow-x-hidden py-16 sm:container">
       <HomeMain heading="লুৎফুজ্জামান বাবর বিতর্কিত বিষয়সমূহ" desc="" />
 
       <div {...props} className="mt-10 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2">

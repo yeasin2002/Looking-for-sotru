@@ -77,13 +77,3 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
     </div>
   );
 };
-
-// Legacy  Cards
-{
-  /* <div className="relative flex cursor-pointer items-center justify-center rounded-md">
-<Image src={item.img} alt={item.title} width={500} height={500} className="min-h-[23rem]" />
-<Button className="absolute left-1/2 top-1/2 w-1/3 -translate-x-1/2 -translate-y-1/2 transform">
-  {item.cta}
-</Button>
-</div> */
-}

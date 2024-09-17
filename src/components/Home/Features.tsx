@@ -7,7 +7,7 @@ interface Props extends React.ComponentProps<"div"> {}
 export const Features = ({ ...props }: Props) => {
   return (
     <div {...props} className="my-10">
-      <HomeMain heading="বাবরের বর্তমান অবস্থা" desc="" />
+      <HomeMain heading="বাবরের বর্তমান অবস্থা" desc="" className="border-0" />
 
       <div className="grid grid-cols-1 gap-4 py-10 sm:grid-cols-2">
         {featureData.map((feature, i) => {

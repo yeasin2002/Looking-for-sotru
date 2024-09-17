@@ -49,7 +49,7 @@ export const Hero = ({ ...props }: Props) => {
               টাইমলাইন
             </p>
             {timeLine.map((item) => (
-              <p key={item} className="flex items-center gap-x-1">
+              <p key={item} className="flex items-center gap-x-1 text-start">
                 <Check className="size-6 text-mainGreen" />
                 <span className="font-inter leading-6 tracking-[-0.16px] text-gray-300">{item}</span>
               </p>

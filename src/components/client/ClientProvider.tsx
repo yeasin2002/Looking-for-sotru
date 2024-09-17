@@ -2,6 +2,8 @@
 
 import React, { Fragment } from "react";
 import { ThemeProvider } from "../theme-provider";
+import { LenisSmoothScrolling } from "../global/ButterySmoothScrolling";
+import { Noice } from "../shared";
 
 interface Props {
   children: React.ReactNode;
@@ -10,7 +12,11 @@ interface Props {
 export const ClientProvider = ({ children }: Props) => {
   return (
     <Fragment>
-      <ThemeProvider>{children}</ThemeProvider>
+      <LenisSmoothScrolling>
+        <Noice>
+          <ThemeProvider>{children}</ThemeProvider>
+        </Noice>
+      </LenisSmoothScrolling>
     </Fragment>
   );
 };

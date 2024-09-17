@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClientProvider } from "@/components/client";
 import { Noice } from "@/components/shared";
-
-const inter = Inter({ subsets: ["latin"] });
+import { hindSiliguriFont } from "@/fonts";
 
 export const metadata: Metadata = {
   title: "লুৎফুজ্জামান বাবর",
@@ -19,10 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`transition-all ${inter.className}`}>
-        <ClientProvider>
-          <Noice>{children}</Noice>
-        </ClientProvider>
+      <body className={`scroll-smooth transition-all ${hindSiliguriFont.className}`}>
+        <ClientProvider>{children}</ClientProvider>
       </body>
     </html>
   );

@@ -1,9 +1,8 @@
 import React from "react";
 
 import Image from "next/image";
-import { Button } from "../ui";
 import { Check } from "lucide-react";
-import { notoSerifBengaliFont, interFont } from "@/fonts";
+import { notoSerifBengaliFont, interFont, alkatraFont } from "@/fonts";
 
 import baborImage from "@/assets/images/babor/babor.jpeg";
 import leftBallMesh from "@/assets/mesh-gradient/ball-right.svg";
@@ -22,13 +21,17 @@ export const Hero = ({ ...props }: Props) => {
 
   return (
     <div {...props} className="relative overflow-x-hidden">
-      <div className="flex flex-col items-center gap-x-10 gap-y-10 py-16 md:flex-row">
-        <div className="space-y-6 text-center md:text-start">
-          <h1 className="text-5xl font-black tracking-tighter text-foreground sm:text-6xl md:text-6xl md:leading-tight">
-            We are open, <br /> Looking for{" "}
-            <span className={`ml-2 ${notoSerifBengaliFont.className}`}>{`শত্রু'স`}</span>
+      <div className="flex flex-col items-center gap-x-10 gap-y-10 py-16 lg:flex-row">
+        <div className="space-y-6 text-center lg:text-start">
+          <h1
+            className={`text-5xl font-black tracking-tighter text-foreground sm:text-6xl md:text-6xl md:leading-tight lg:text-7xl ${alkatraFont.className}`}
+          >
+            <span>
+              We are open, <br /> Looking for
+            </span>
+            <span className={`px-3 ${notoSerifBengaliFont.className}`}>{`শত্রু'স`}</span>
           </h1>
-          <p className={`${interFont.className} text-lg leading-7 tracking-normal text-[#a2a2a8]`}>
+          <p className={`${interFont.className} text-start text-lg leading-7 tracking-normal text-[#a2a2a8]`}>
             লুৎফুজ্জামান বাবর (জন্ম: ১০ অক্টোবর ১৯৫৮) একজন বাংলাদেশি রাজনীতিবিদ। তিনি খালেদা জিয়ার মন্ত্রীসভায়
             নেত্রকোণা-৪ আসনের সংসদ সদস্য ও স্বরাষ্ট্র প্রতিমন্ত্রী ছিলেন ১০ অক্টোবর ২০০১ থেকে ২৯ অক্টোবর ২০০৬ পর্যন্ত।
           </p>
@@ -44,7 +47,7 @@ export const Hero = ({ ...props }: Props) => {
 
           <div className="space-y-1 sm:px-14 md:px-0">
             <p
-              className={`${interFont.className} text-lg leading-7 tracking-normal text-[#a2a2a8] sm:text-xl md:tracking-wide`}
+              className={`${interFont.className} text-start text-lg leading-7 tracking-normal text-[#a2a2a8] sm:text-xl md:tracking-wide`}
             >
               টাইমলাইন
             </p>

@@ -103,7 +103,7 @@ interface Props extends React.ComponentProps<"div"> {}
 
 export const ImageGallery = ({ ...props }: Props) => {
   return (
-    <div {...props}>
+    <div {...props} id="gallery">
       <ImageGalleryItem />
     </div>
   );

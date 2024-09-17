@@ -8,24 +8,33 @@ import { interFont } from "@/fonts";
 import { AlignJustify } from "lucide-react";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { HireMeCTA } from "./HireMeCTA";
+import { div } from "framer-motion/client";
+import Link from "next/link";
 
 interface Props extends React.ComponentProps<"div"> {}
 
 export const Nav = ({ className, ...props }: Props) => {
   const navItem = ["About", "Blog", "Testimonials", "Resources"];
+  const navbarItem = [
+    { name: "গ্যালারি ", url: "#gallery" },
+    { name: "৭-সিস্টার'স ", url: "#seven-sisters" },
+    { name: "বিতর্কিত বিষয়সমূহ", url: "#controversial-topics" },
+    { name: "বর্তমান অবস্থা", url: "#current-situation" },
+  ];
 
   return (
-    <nav {...props} className={cn("flex items-center justify-between py-6", className)}>
+    <nav {...props} className={cn("flex items-center justify-between pt-6", className)} id="top">
       <div className="flex items-center gap-x-4">
         <Logo />
         <div className="hidden items-center gap-x-3 md:flex">
-          {navItem.map((item) => (
-            <p
-              className={`${interFont.className} font-inter px-5] flex cursor-pointer items-center p-2 font-medium leading-6 tracking-[-0.16px] text-[#1D1D20] dark:text-[#F4F4F5]`}
-              key={item}
-            >
-              {item}
-            </p>
+          {navbarItem.map((item) => (
+            <Link key={item.name} href={item.url}>
+              <p
+                className={`${interFont.className} font-inter px-5] flex cursor-pointer items-center p-2 font-medium leading-6 tracking-[-0.16px] text-[#1D1D20] dark:text-[#F4F4F5]`}
+              >
+                {item.name}
+              </p>
+            </Link>
           ))}
         </div>
       </div>

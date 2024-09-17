@@ -30,7 +30,7 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
   };
 
   return (
-    <div {...props} className="space-y-6 pt-4">
+    <div {...props} className="space-y-6 pt-4" id="seven-sisters">
       <div className="mx-auto max-w-3xl">
         <h2
           className={`m-0 mb-4 text-center text-4xl font-black leading-[52.1792px] tracking-wide md:text-6xl md:leading-[66.08px] md:tracking-[-1.12px] ${redHatDisplay.className} font-black`}
@@ -66,10 +66,16 @@ export const ServiceSlider2 = ({ ...props }: Props) => {
         })}
 
         <div className="mx-4 my-8 flex items-center justify-between">
-          <button className="bg-mainGreen p-4 text-white dark:bg-[#2f2e33] dark:text-gray-400" onClick={goToPrevSlide}>
+          <button
+            className="rounded-sm bg-mainGreen p-4 text-white dark:bg-[#2f2e33] dark:text-gray-400"
+            onClick={goToPrevSlide}
+          >
             <ArrowLeft />
           </button>
-          <button className="bg-mainGreen p-4 text-white dark:bg-[#2f2e33] dark:text-gray-400" onClick={goToNextSlide}>
+          <button
+            className="rounded-sm bg-mainGreen p-4 text-white dark:bg-[#2f2e33] dark:text-gray-400"
+            onClick={goToNextSlide}
+          >
             <ArrowRight />
           </button>
         </div>

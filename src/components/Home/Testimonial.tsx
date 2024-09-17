@@ -1,6 +1,6 @@
-import { controversialInfoData, testimonialData } from "@/data";
+import { controversialInfoData } from "@/data";
 import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import Image from "next/image";
 
 import leaf from "@/assets/icons/purpleLeaf.svg";
@@ -11,8 +11,8 @@ interface Props extends React.ComponentProps<"div"> {}
 
 export const Testimonial = ({ ...props }: Props) => {
   return (
-    <div className="relative overflow-x-hidden py-16 sm:container">
-      <HomeMain heading="লুৎফুজ্জামান বাবর বিতর্কিত বিষয়সমূহ" desc="" />
+    <div className="relative overflow-x-hidden py-16 sm:container" id="controversial-topics">
+      <HomeMain heading="বিতর্কিত বিষয়সমূহ" desc="" />
 
       <div {...props} className="mt-10 grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2">
         {controversialInfoData.map((user) => {

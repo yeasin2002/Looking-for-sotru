@@ -14,7 +14,6 @@ import Link from "next/link";
 interface Props extends React.ComponentProps<"div"> {}
 
 export const Nav = ({ className, ...props }: Props) => {
-  const navItem = ["About", "Blog", "Testimonials", "Resources"];
   const navbarItem = [
     { name: "গ্যালারি ", url: "#gallery" },
     { name: "৭-সিস্টার'স ", url: "#seven-sisters" },
@@ -40,37 +39,32 @@ export const Nav = ({ className, ...props }: Props) => {
       </div>
       <div className="flex items-center gap-x-4">
         <ThemeSwitcher />
-        {/* <Button className="hidden md:block">Request Code</Button> */}
+
         <HireMeCTA className="hidden md:block" />
 
         <Sheet>
           <SheetTrigger className="md:hidden">
             <AlignJustify />
           </SheetTrigger>
-          <SheetContent side={"left"} className="bg-[#212024] lg:hidden">
+          <SheetContent side={"left"} className="dark:bg-[#212024] lg:hidden">
             <SheetHeader>
               <SheetTitle>
                 <Logo />
               </SheetTitle>
             </SheetHeader>
             <div className="mt-4 items-center gap-x-3 md:flex">
-              {navItem.slice(0, 3).map((item) => (
-                <p
+              {navbarItem.map((item) => (
+                <Link
                   className={`${interFont.className} font-inter px-5] flex cursor-pointer items-center p-2 font-medium leading-6 tracking-[-0.16px] text-[#1D1D20] dark:text-[#F4F4F5]`}
-                  key={item}
+                  key={item.name}
+                  href={item.url}
                 >
-                  {item}
-                </p>
+                  {item.name}
+                </Link>
               ))}
             </div>
-            <div className="my-2 border-y border-[#a2a2a8]/60 py-2 text-[#a2a2a8]">
-              <p>Resources</p>
-              <div className="mt-2 space-y-2 pl-5">
-                <p>Help Center </p>
-                <p>404</p>
-              </div>
-            </div>
-            <Button className="w-full">Request Code</Button>
+
+            <HireMeCTA className="mt-4 w-full" />
           </SheetContent>
         </Sheet>
       </div>

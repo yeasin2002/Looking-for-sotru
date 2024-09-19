@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 240°, 3%, 12%;
+    --foreground: 240°, 3%, 12%;  
     --main-green: 178, 53%, 48%;
     --main-green-fade: 179, 51%, 39%;
 

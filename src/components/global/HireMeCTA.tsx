@@ -44,9 +44,14 @@ interface Props extends React.ComponentPropsWithoutRef<"div"> {}
 export function HireMeCTA({ className }: Props) {
   const images = [img2, img1, img4, img3];
   return (
-    <div className={cn("flex items-center justify-center", className)}>
+    <div className={cn("flex items-center justify-center")}>
       <Modal>
-        <ModalTrigger className="group/modal-btn flex justify-center whitespace-nowrap bg-[#39bab5] text-[#FFFFFF] hover:bg-[#39bab5]/90">
+        <ModalTrigger
+          className={cn(
+            "group/modal-btn flex justify-center whitespace-nowrap bg-[#39bab5] text-[#FFFFFF] hover:bg-[#39bab5]/90",
+            className,
+          )}
+        >
           <span className="text-center transition duration-500 group-hover/modal-btn:translate-x-40">Hire Me</span>
           <div className="absolute inset-0 z-20 flex -translate-x-40 items-center justify-center text-white transition duration-500 group-hover/modal-btn:translate-x-0">
             <Image src={handShake} alt="handShake" className="size-8" />

@@ -14,7 +14,7 @@ export const CallToAction = ({ ...props }: Props) => {
     >
       <h3
         className={cn(
-          `mini:text-2xl box-border font-sans text-xl font-black leading-10 tracking-[-0.16px] text-foreground antialiased sm:text-3xl md:text-4xl ${redHatDisplay.className}`,
+          `box-border font-sans text-xl font-black leading-10 tracking-[-0.16px] text-gray-100 antialiased dark:text-foreground mini:text-2xl sm:text-3xl md:text-4xl ${redHatDisplay.className}`,
         )}
       >
         Need Web Developer?
